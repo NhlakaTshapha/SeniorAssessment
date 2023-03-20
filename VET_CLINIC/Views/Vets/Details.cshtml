@@ -1,0 +1,50 @@
+﻿@model VET_CLINIC.Models.Vet
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Vet</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.VetName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.VetName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.VetSurName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.VetSurName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ID_Number)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ID_Number)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MedicalLicenseNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MedicalLicenseNumber)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.VetID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
